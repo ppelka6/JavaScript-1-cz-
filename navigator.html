@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>window.navigator</title>
+        <style>
+            td {border: 1px solid gray; padding: 3px 5px;}
+        </style>
+    </head>
+    <body>
+        <script>
+            document.write("<table>");
+              document.write("<tr><td>Nazwa aplikacji (appName)</td><td>"+navigator.appName + "</td></tr>");
+              document.write("<tr><td>Nazwa kodowa aplikacji (appCodeName)</td><td>"+navigator.appCodeName + "</td></tr>");
+              document.write("<tr><td>Wersja aplikacji (appVersion)</td><td>"+navigator.appVersion + "</td></tr>");
+              document.write("<tr><td>Język (language)</td><td>"+navigator.language + "</td></tr>");
+              document.write("<tr><td>Obsługa informacji cookie (cookieEnabled)</td><td>"+navigator.cookieEnabled + "</td></tr>");
+              document.write("<tr><td>Klasa procesora (cpuClass)</td><td>"+navigator.cpuClass + "</td></tr>");
+              document.write("<tr><td>Tryb online (onLine)</td><td>"+navigator.onLine + "</td></tr>");
+              document.write("<tr><td>Platforma (platform)</td><td>"+navigator.platform + "</td></tr>");
+              document.write("<tr><td>Liczba wtyczek</td><td>"+navigator.plugins.length + "</td></tr>");
+              document.write("</table>");
+        </script>
+    </body>
+    </html>

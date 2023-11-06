@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Łańcuchy i tablice
+        </title>
+    <script>
+        function wrangleArray() {
+            var sentence = "JavaScript to jest naprawdę fajny język";
+            var newSentence = "";
+        //Zapisanie
+        document.getElementById("div1").innerHTML = "<p>" + sentence + "</p>";
+        //Przekształcenie w tablicę
+        var words = sentence.split(" ");
+        //Usunięcie słów'naprawdę' i 'fajny' oraz dodanie zamiast nich słowa 'zaawansowany'
+        var message = words.splice(3,2,"zaawansowany");
+        //Użycie alertu do poinformowania o usuniętych słowach
+        alert("Usunięte słowa: " + message);
+        //Przekształcenie tablicy w łańcuch i zapisanie jej
+        document.getElementById("div2").innerHTML = "<p>" + words.join(" ") + "</p>";
+        }
+    </script>
+    </head>
+    <body>
+        <div id="div1"></div>
+        <div id ="div2"></div>
+        <script>wrangleArray();</script>
+    </body>
+</html>

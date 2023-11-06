@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wywoływanie funkcji </title>
+<script>
+    function buttonReport(buttonId, buttonName, buttonValue) {
+        //informacja o id przycisku
+        var userMessage1 = "Identyfikator przycisku: " + buttonId + "\n";
+        //nastepnie informacja o nazwie przycisku
+        var userMessage2 = "Nazwa przycisku: " + buttonName + "\n";
+        //informacja o wartości przycisku
+        var userMessage3 = "Wartość przycisku: " + buttonValue;
+        //alert dla użytkownika
+        alert(userMessage1 + userMessage2 + userMessage3);
+    }
+</script>
+</head>
+<body>
+<input type = "button" id = "id1" name = "Przycisk po lewej stronie" value = "Lewy" onclick = "buttonReport(this.id, this.name, this.value)"/>
+<input type = "button" id = "id2" name = "Przycisk środkowy" value = "Środkowy" onclick = "buttonReport(this.id, this.name, this.value)"/>
+<input type = "button" id = "id3" name = "Przycisk po prawej stronie" value = "Prawy" onclick = "buttonReport(this.id, this.name, this.value)"/>
+</body>
+</html>

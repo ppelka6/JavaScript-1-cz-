@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Programowanie obiektowe
+        </title>
+            <script>
+                function Person(personName) {
+                    this.name = personName;
+                    this.info = "Ta osoba ma na imię " + this.name;
+                    this.showInfo = function() {
+                        alert(this.info);
+                    }
+                    var person1 = new Person("Adam");
+                    var person2 = new Person("Ewa");
+                    Person.prototype.sayHello = function() {
+                        alert(this.name + "mówi: Witaj");
+                    }
+                }
+            </script>
+    </head>
+    <body>
+        <input type = "button" value="Wyświetl informacje o Adamie" onclick="person1.showInfo()" />
+        <input type = "button" value="Wyświetl informacje o Ewie" onclick="person2.showInfo()" />
+        <input type = "button" value="Przywitaj się z Adamem" onclick="person1.sayHello()" />
+        <input type = "button" value="Przywitaj się z Ewą" onclick="person2.sayHello()" />
+    </body>
+</html>

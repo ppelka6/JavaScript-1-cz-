@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zasięgi zmiennej </title>
+</head>
+<body>
+<script>
+    var a = 10;
+    var b = 10;
+    function showVars() {
+        var a = 20;
+        b = 20;
+        return "Zmienna lokalna 'a' = " + a + "\nZmienna globalna 'b' = " +b;
+    }
+    var message = showVars();
+    alert(message + "\nZmienna globalna 'a' = " + a);
+</script>
+</body>
+</html>

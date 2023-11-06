@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Funkcja wykrywająca spam
+        </title>
+    </head>
+    <body>
+        <script>
+            function detectSpam(input) {
+                input = input.toLowerCase();
+                return input.indexOf("fałszywe");
+            }
+            
+            var mystring = prompt("Wprowadź łańcuch");
+            alert(detectSpam(mystring));
+        </script>
+    </body>
+</html>
